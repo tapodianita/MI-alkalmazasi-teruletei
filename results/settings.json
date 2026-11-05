@@ -1,0 +1,56 @@
+{
+  "python": "3.14.7",
+  "os": "Windows-11-10.0.26300-SP0",
+  "chunking": {
+    "method": "fixed size + overlap (words)",
+    "chunk_words": 200,
+    "overlap_words": 40,
+    "books": {
+      "en": [
+        "1_Hobbit_or_there_and_back_again",
+        "2_The_Fellowship_Of_The_Ring",
+        "3_The_Two_Towers",
+        "4_The_Return_Of_The_King"
+      ],
+      "hu": [
+        "1_a_hobbit",
+        "2_a_gyuruk_ura_a_gyuru_szovetsege",
+        "3_a_gyuruk_ura_a_kiraly_visszater",
+        "4_a_gyuruk_ura_a_ket_torony"
+      ]
+    }
+  },
+  "embedding": {
+    "model": "text-embedding-multilingual-e5-large-instruct",
+    "format": {
+      "query": "Instruct: Given a question about a novel, retrieve passages from the novel that answer the question\nQuery: {text}",
+      "passage": "{text}"
+    },
+    "url": "http://192.168.88.10:1234/v1"
+  },
+  "k_context": 5,
+  "temperature": 0.0,
+  "max_tokens": 4096,
+  "llm_url": "http://192.168.88.200:1234/v1",
+  "models": {
+    "gemma-small": {
+      "family": "gemma",
+      "size": "small",
+      "name": "google/gemma-4-e4b"
+    },
+    "gemma-large": {
+      "family": "gemma",
+      "size": "large",
+      "name": "google/gemma-4-31b-qat"
+    }
+  },
+  "n_chunks": {
+    "en": 3592,
+    "hu": 2919
+  },
+  "n_question_pairs": 15,
+  "mean_answer_seconds": {
+    "gemma-large": 128.8,
+    "gemma-small": 29.9
+  }
+}

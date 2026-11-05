@@ -1,0 +1,31 @@
+model,id,correct_en,correct_hu,hit_en,hit_hu,case
+gemma-large,q01,1.0,1.0,1.0,1.0,same
+gemma-large,q02,0.5,0.5,1.0,1.0,same
+gemma-large,q03,1.0,1.0,1.0,1.0,same
+gemma-large,q04,0.0,1.0,0.0,1.0,only HU correct - retrieval
+gemma-large,q05,0.0,0.0,0.0,0.0,same
+gemma-large,q06,0.5,1.0,1.0,1.0,same
+gemma-large,q07,1.0,1.0,1.0,1.0,same
+gemma-large,q08,1.0,0.0,1.0,0.0,only EN correct - retrieval
+gemma-large,q09,1.0,1.0,1.0,1.0,same
+gemma-large,q10,1.0,0.0,1.0,0.0,only EN correct - retrieval
+gemma-large,q11,0.5,0.5,0.0,0.0,same
+gemma-large,q12,0.0,0.0,0.0,0.0,same
+gemma-large,q13,0.0,0.5,0.0,0.0,only HU correct - retrieval (better language answered from model knowledge)
+gemma-large,q14,1.0,1.0,1.0,0.0,same
+gemma-large,q15,1.0,0.0,0.0,0.0,only EN correct - retrieval (better language answered from model knowledge)
+gemma-small,q01,1.0,1.0,1.0,1.0,same
+gemma-small,q02,0.0,0.0,1.0,1.0,same
+gemma-small,q03,1.0,1.0,1.0,1.0,same
+gemma-small,q04,0.0,0.0,0.0,1.0,same
+gemma-small,q05,0.0,0.0,0.0,0.0,same
+gemma-small,q06,0.5,0.5,1.0,1.0,same
+gemma-small,q07,1.0,0.5,1.0,1.0,same
+gemma-small,q08,0.0,0.0,1.0,0.0,same
+gemma-small,q09,1.0,1.0,1.0,1.0,same
+gemma-small,q10,1.0,0.0,1.0,0.0,only EN correct - retrieval
+gemma-small,q11,0.5,0.0,0.0,0.0,only EN correct - retrieval (better language answered from model knowledge)
+gemma-small,q12,0.0,0.0,0.0,0.0,same
+gemma-small,q13,0.0,0.0,0.0,0.0,same
+gemma-small,q14,0.0,0.0,1.0,0.0,same
+gemma-small,q15,0.5,0.0,0.0,0.0,only EN correct - retrieval (better language answered from model knowledge)
